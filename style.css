@@ -1,0 +1,123 @@
+/* Color Scheme - (Impostando queste variabili mi e piu facile
+    impostare gia i colori principali del progetto)*/
+
+:root {
+    --lim-principal: #00dd00;
+    --lim-battery-full: #1ec31e;
+    --lim-battery-partial: #f5b453;
+    --lim-battery-alert: #be4141;
+    --text-color: white;
+}
+
+/* -- Main -- */
+
+* {
+    margin: 0;
+    padding-left: 110px;
+    padding-right: 110px;
+}
+
+body {
+    background-image: url("background.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+span, i {
+    padding: 0;
+}
+
+/* -- Content -- */
+
+.wrapper {
+    background-color: rgba(0,0,0,.5);
+    border-radius: 15px;
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.first-sec {
+    text-align: center;
+}
+.first-sec > .logo-lim {
+    width: 20%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.title-content {
+    color: var(--lim-principal);
+    font-family: 'Golos Text', sans-serif;
+    font-weight: 400;
+}
+
+/* -- Content Button Section -- */
+
+.nav {
+    background-color: var(--lim-principal);
+    align-items: center;
+    width: auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 10px;
+    margin-bottom: 20xp;
+}
+
+.btn-operation {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* -- Scooter Around Section -- */
+
+.info-scooter {
+    color: var(--text-color);
+    margin-top: 30px;
+    line-height: 25px;
+}
+
+.check {
+    cursor: pointer;
+}
+
+.type-scooter {
+    font-family: 'Golos Text', sans-serif;
+    font-weight: 400;
+    padding-left: 20px;
+    font-size: 25px;
+}
+
+.type-various {
+    padding-left: 20px;
+}
+
+.battery
+{
+    border-radius: 6px;
+    padding: 7px;
+    height: 20px;
+}
+
+/* -- Status Of The Battery-- */
+
+.full {
+    background-color: var(--lim-battery-full);
+    width: 70%;
+}
+
+.partial {
+    background-color: var(--lim-battery-partial);
+    width: 40%;
+}
+
+.alert {
+    background-color: var(--lim-battery-alert);
+    width: 11%;
+}
